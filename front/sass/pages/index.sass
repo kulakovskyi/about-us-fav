@@ -1,0 +1,734 @@
+$dark-blue: #010055
+$white: #fff
+$magenta: #ff267e
+
+$font-suisse-intl-reg: SuisseIntl-Reg, sans-serif
+$font-suisse-intl-med: SuisseIntl-Med, sans-serif
+$font-suisse-intl-bold: SuisseIntl-Bold, sans-serif
+$font-suisse-intl-semibold: SuisseIntl-SemiBold, sans-serif
+$font-wulkan-display: WulkanDisplay, sans-serif
+
+.container
+  max-width: 1366px
+  margin: auto !important
+
+.normal-title
+  display: flex
+  font-family: $font-suisse-intl-med
+  font-size: 66px
+  text-transform: uppercase
+  color: $dark-blue
+  padding: 0 24px
+  letter-spacing: 2px
+  background: $magenta
+  height: 96px
+  align-items: center
+
+.italic-title
+  font-family: $font-wulkan-display
+  font-size: 66px
+  text-transform: uppercase
+  color: $dark-blue
+  letter-spacing: 1.5px
+  background: $magenta
+  padding: 0 24px
+  height: 96px
+  display: flex
+  align-items: center
+
+.txt-style
+  font-family: $font-suisse-intl-reg
+  color: $magenta
+  font-size: 21px
+  line-height: 36px
+  letter-spacing: 0.4px
+
+.quad-logo
+  width: 192px
+  height: 192px
+  background: $dark-blue
+  display: flex
+  justify-content: center
+  align-items: center
+  &:before
+    content: ''
+    mask-image: url("../img/logo-icon.svg")
+    mask-repeat: no-repeat
+    mask-size: contain
+    background-color: $magenta
+    width: 110px
+    height: 85px
+
+.about-us
+  overflow: hidden
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  background: $dark-blue !important
+  .head-about
+    background: url("../img/top-bg.jpg") no-repeat 50% 0/cover
+    position: relative
+    height: 480px
+    .container
+      display: flex
+      justify-content: space-between
+      height: 100%
+    &__left
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__title
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      .italic-title
+        margin-top: -12px
+      .mob-title
+        display: none
+    &__figure
+      background: url("../img/top-figure.png") no-repeat 0 0/contain
+      width: 595px
+      height: 438px
+      position: absolute
+      bottom: 0
+      left: 26px
+      right: 0
+      margin: auto
+      z-index: 1
+    &__logo
+      width: 441px
+      height: 192px
+      align-self: flex-end
+      position: relative
+      z-index: 0
+  .history
+    padding-bottom: 160px
+    &__title
+      display: flex
+      flex-direction: row
+      .italic-title
+        padding: 0 25px 0 0
+    &__wrap
+      margin-top: 96px
+      display: flex
+      justify-content: center
+    &__cup
+      width: 475px
+      height: 460px
+      margin-left: -85px
+    &__cup-mob
+      display: none
+    &__txt
+      width: 36%
+      margin-left: 210px
+      &-paragraph
+        margin-bottom: 36px
+        width: 86%
+      &-slogan
+        font-family: $font-suisse-intl-semibold
+        font-size: 28px
+        line-height: 30px
+        color: $magenta
+        letter-spacing: 1px
+        text-transform: uppercase
+        margin-top: 53px
+  .manifest
+    padding-bottom: 192px
+    .container
+      display: flex
+      justify-content: space-between
+    &__video
+      width: 849px
+      height: 480px
+      position: relative
+      cursor: pointer
+      &-icon
+        background: url("../img/manifest-play-icon.svg") no-repeat 0 0/contain
+        width: 108px
+        height: 108px
+        position: absolute
+        top: 39%
+        left: 0
+        right: 0
+        margin: auto
+        transition: transform .4s ease-in-out
+      &-img
+        background: url("../img/manifest-video-bg.jpg") no-repeat 0 0/cover
+        height: 480px
+      &:hover
+        .manifest__video-icon
+          transform: scale(1.2)
+      iframe
+        width: 100%
+        height: 100%
+  .mission
+    background: url("../img/mission-bg.jpg") no-repeat 50% 0/cover
+    height: 384px
+    .container
+      display: flex
+      justify-content: space-between
+      height: 100%
+    &__title
+      display: flex
+      .italic-title
+        padding: 0 20px 0 0
+    &__img-mob
+      display: none
+    &__txt
+      width: 478px
+      align-self: flex-end
+      background: $dark-blue
+      padding: 59px 72px 37px
+  .philosophy
+    padding-top: 192px
+    &__title
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      .italic-title
+        margin-top: -12px
+        padding: 0 20px
+    &__wrap
+      display: flex
+      justify-content: space-between
+    &__txt
+      margin-top: 70px
+      margin-left: 100px
+      width: 450px
+      &-paragraph
+        margin-bottom: 48px
+    &__right
+      width: 635px
+      height: 480px
+      overflow: hidden
+      background: url("../img/philosophy-img.jpg") no-repeat 50% 0/cover
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+    &__map-wrap
+      margin-top: 178px
+      display: flex
+    &__map
+      width: 931px
+      height: 532px
+    .map-ua
+      background: url("../img/philosophy-map-desk_ukr.png") no-repeat 0 0/contain
+    .map-ru
+      background: url("../img/philosophy-map-desk_ru.png") no-repeat 0 0/contain
+    .map-en
+      background: url("../img/philosophy-map-desk_en.png") no-repeat 0 0/contain
+    &__guy
+      background: url("../img/philosophy-figure.png") no-repeat 0 0/contain
+      width: 525px
+      height: 519px
+      margin-left: -77px
+      margin-right: -20px
+  .fans
+    background: url("../img/fans-bg.jpg") no-repeat 50% 0/cover
+    height: 384px
+    margin-top: -38px
+    position: relative
+    .container
+      display: flex
+      justify-content: space-between
+      height: 100%
+    &__logo
+      align-self: flex-end
+    &__title
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      .normal-title
+        padding: 0 19px
+        letter-spacing: 1.3px
+        &:nth-child(2)
+          margin-top: -12px
+          padding-right: 25px
+      .italic-title
+        margin-top: -12px
+        padding: 0 22px
+  .game
+    padding: 288px 0 210px
+    text-align: center
+    &__title
+      display: flex
+      justify-content: center
+      .normal-title
+        padding: 0 20px 0 24px
+      .italic-title
+        vertical-align: top
+        padding: 0 25px 0 0
+      .mob-title
+        display: none
+    &__list
+      margin-top: 92px
+      display: flex
+      justify-content: center
+      &-item
+        width: 528px
+        position: relative
+        &:nth-child(1)
+          margin-right: -1px
+          &:before
+            content: ''
+            background: url("../img/game-figure-left.png") no-repeat 0 0/contain
+            width: 240px
+            height: 275px
+            position: absolute
+            bottom: -18px
+            left: -162px
+            z-index: 1
+        &:nth-child(2)
+          &:before
+            content: ''
+            background: url("../img/game-figure-right.png") no-repeat 0 0/contain
+            width: 253px
+            height: 253px
+            position: absolute
+            bottom: 30px
+            right: -140px
+            z-index: 1
+    &__link
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 2
+    &__icon
+      mask-image: url("../img/footer-icon.svg")
+      mask-repeat: no-repeat
+      background-color: $magenta
+      mask-size: contain
+      width: 32px
+      height: 32px
+      position: absolute
+      top: 17px
+      right: 17px
+      display: none
+    &__logo
+      height: 288px
+      border: 1px solid $magenta
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      &:hover
+        .game__icon
+          display: block
+        .game__logo-left,
+        .game__logo-right
+          background-color: $magenta
+      &-left,
+      &-right
+        background-color: #ccc
+        mask-repeat: no-repeat
+        mask-size: contain
+        width: 228px
+        height: 119px
+        margin-top: -17px
+        transition: background-color .3s linear
+      &-left
+        mask-image: url("../img/game-logo.svg")
+      &-right
+        mask-image: url("../img/game-logo-2.svg")
+    &__txt
+      margin: 30px auto 0
+      font-size: 17px
+      line-height: 24px
+      font-family: $font-suisse-intl-med
+      text-transform: uppercase
+      color: $magenta
+      width: 72%
+      cursor: default
+  .team
+    .container
+      position: relative
+    &__title
+      display: flex
+      .italic-title
+        padding: 0 23px 0 0
+    &__controls
+      position: absolute
+      top: 32px
+      right: 0
+      display: flex
+      align-items: center
+      &-left,
+      &-right
+        width: 180px
+        height: 60px
+        border: 1px solid $magenta
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: background .4s linear
+        cursor: pointer
+        &:before
+          content: ''
+          background-color: $magenta
+          width: 43px
+          height: 17px
+          transition: background-color .4s linear
+        &:hover
+          background: $magenta
+          &:before
+            background-color: $dark-blue
+      &-left
+        margin-right: 20px
+        &:before
+          mask-image: url("../img/team-arrow-left.svg")
+          mask-repeat: no-repeat
+      &-right
+        &:before
+          mask-image: url("../img/team-arrow-right.svg")
+          mask-repeat: no-repeat
+      &-count
+        display: none
+    &__slider
+      margin-top: 95px
+      display: flex
+      justify-content: space-between
+    &__slide
+      width: 320px
+      .img-wrap
+        width: 312px
+        height: 384px
+        margin: auto
+    &__name
+      margin-top: -15px
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      &-first,
+      &-second
+        font-family: $font-suisse-intl-med
+        font-size: 22px
+        color: $dark-blue
+        text-transform: uppercase
+        background: $magenta
+        letter-spacing: 0.4px
+        padding: 10px 16px 9px
+      &-first
+        position: relative
+        z-index: 1
+      &-second
+        padding: 10px 16px 9px 24px
+        margin: 24px 0 0 -24px
+  .football
+    padding-top: 63px
+    .container
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &__title
+      position: relative
+      display: flex
+      .italic-title
+        padding: 0 20px 0 0
+    &__list
+      display: flex
+      flex-wrap: wrap
+      margin-top: -1px
+      &-item
+        width: 228px
+        height: 222px
+        border: 1px solid #00008C
+        margin: 0 -1px -1px 0
+        position: relative
+        a
+          display: flex
+          justify-content: center
+          align-items: center
+          height: 100%
+        &:before
+          content: ''
+          mask-image: url("../img/footer-icon.svg")
+          mask-repeat: no-repeat
+          background-color: $magenta
+          mask-size: contain
+          width: 32px
+          height: 32px
+          position: absolute
+          top: 10px
+          right: 10px
+          display: none
+        &:hover
+          &:before
+            display: block
+          img
+            filter: grayscale(0)
+        &:nth-child(6),
+        &:nth-child(12)
+          img
+            max-height: 100px
+        &:nth-child(1),
+        &:nth-child(7)
+          img
+            max-height: 140px
+        img
+          max-height: 120px
+          filter: grayscale(1)
+  .play
+    padding: 135px 0 155px
+    text-align: center
+    .container
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &__title
+      position: relative
+      display: flex
+      .italic-title
+        padding: 0 20px 0 0
+    &__wrap
+      margin-top: 77px
+      display: flex
+      justify-content: center
+      text-align: left
+    &__left,
+    &__right
+      display: flex
+      flex-direction: column
+      width: 30%
+      margin-top: 30px
+      &-paragraph
+        margin-bottom: 85px
+        &:last-child
+          margin-bottom: 0
+    &__center
+      background: url("../img/play-figure.png") no-repeat 0 0/contain
+      width: 460px
+      height: 523px
+      margin: 15px -25px 0 -15px
+  .app
+    background: $magenta
+    .container
+      display: flex
+      justify-content: space-between
+    &__title
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      .normal-title,
+      .italic-title
+        color: $magenta
+        background: $dark-blue
+      .normal-title
+        &:nth-child(2)
+          margin-top: -12px
+      .br
+        margin-top: -12px
+        margin-bottom: -12px
+        display: flex
+        .italic-title
+          padding: 0 20px 0 0
+      >.italic-title
+        margin-top: -12px
+        padding: 0 24px
+      .mob-title
+        display: none
+    &__market
+      margin: 61px 0 0 24px
+      display: flex
+      &-apple
+        background: url("../img/app-apple.png") no-repeat 0 0/contain
+        image-rendering: -webkit-optimize-contrast
+        width: 192px
+        height: 64px
+        margin-right: 24px
+      &-google
+        background: url("../img/app-google.png") no-repeat 0 0/contain
+        image-rendering: -webkit-optimize-contrast
+        width: 216px
+        height: 64px
+    &__market-mob
+      display: none
+    &__right
+      background: url("../img/app-img.png") no-repeat 0 0/contain
+      width: 377px
+      height: 562px
+      align-self: flex-end
+      margin-top: -82px
+      margin-right: 95px
+  .social
+    &__title-wrap
+      background: url("../img/social-bg.jpg") no-repeat 50% 0/cover
+      padding: 110px 0 109px
+    &__title
+      display: flex
+      flex-direction: column
+      align-items: center
+      .normal-title
+        padding: 0 20px
+        &:nth-child(2)
+          margin-top: -12px
+      .br
+        margin-top: -12px
+        margin-bottom: -12px
+        display: flex
+        .italic-title
+          padding: 0 20px 0 0
+      >.italic-title
+        padding: 0 24px
+        margin: -12px 0 0 0
+      .mob-title
+        display: none
+    &__list-wrap
+      background: $dark-blue
+      padding: 96px 0 96px
+    &__list
+      display: flex
+      justify-content: center
+      &-item
+        margin: 0 12px
+        width: 96px
+        height: 96px
+        background: $magenta
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: transform .4s ease
+        &:hover
+          transform: scale(1.2)
+        &:before
+          mask-repeat: no-repeat
+          mask-size: contain
+          background-color: $dark-blue
+      .social-fb
+        &:before
+          content: ''
+          mask-image: url("../img/social-icon-1.svg")
+          width: 19px
+          height: 37px
+      .social-insta
+        &:before
+          content: ''
+          mask-image: url("../img/social-icon-2.svg")
+          width: 36px
+          height: 36px
+      .social-youtube
+        &:before
+          content: ''
+          mask-image: url("../img/social-icon-3.svg")
+          width: 38px
+          height: 29px
+      .social-telegram
+        &:before
+          content: ''
+          mask-image: url("../img/social-icon-4.svg")
+          width: 36px
+          height: 33px
+      .social-tiktok
+        &:before
+          content: ''
+          mask-image: url("../img/social-icon-5.svg")
+          width: 32px
+          height: 37px
+      .social-viber
+        &:before
+          content: ''
+          mask-image: url("../img/social-icon-6.svg")
+          width: 38px
+          height: 42px
+  .footer-about
+    background: url("../img/footer-bg.jpg") no-repeat 50% 0/cover
+    .container
+      display: flex
+      justify-content: space-between
+      height: 100%
+    &__title
+      align-self: flex-end
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      .normal-title
+        &:nth-child(2)
+          margin-top: -12px
+      .italic-title
+        padding: 0 24px
+        margin-top: -12px
+      .br
+        display: flex
+        .italic-title
+          margin-top: 0
+          padding-left: 0
+    &__links
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+    &__link
+      font-family: $font-suisse-intl-reg
+      font-size: 20px
+      color: $dark-blue
+      text-transform: uppercase
+      background: $magenta
+      letter-spacing: 1px
+      text-decoration: underline
+      padding: 23px 71px 23px 28px
+      position: relative
+      &:after
+        content: ''
+        mask-image: url("../img/footer-icon.svg")
+        mask-repeat: no-repeat
+        mask-size: contain
+        width: 32px
+        height: 32px
+        background-color: $dark-blue
+        position: absolute
+        top: 20px
+        right: 22px
+      &:hover
+        text-decoration: none
+      &:nth-child(even)
+        color: $magenta
+        background-color: $dark-blue
+        &:after
+          background-color: $magenta
+
+.slider
+  &.not-enough-elems
+    .slider-wrapper
+      display: none
+
+  &:not(.not-enough-elems)
+    display: flex
+    justify-content: space-between
+    > *:not(.slider-wrapper)
+      display: none
+
+.slider-wrapper
+  width: 100%
+  position: relative
+  overflow-x: hidden
+  overflow-y: visible
+  padding-bottom: 49px
+  &.prev
+    .slider-inner
+      transform: translateX(33.3333333%)
+      transition: all .3s ease
+      -webkit-transition: transform .3s ease
+      -webkit-transition: -webkit-transform .3s ease
+
+  &.next
+    .slider-inner
+      transform: translateX(-33.3333333%)
+      transition: all .3s ease
+      -webkit-transition: transform .3s ease
+      -webkit-transition: -webkit-transform .3s ease
+
+.slider-inner
+  width: 300%
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  margin-left: -100%
+
+.slider-page
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex: 0 0 33.33333%
+  overflow-x: hidden
+  overflow-y: visible
+  justify-content: space-around
+  transition: all .3s ease
