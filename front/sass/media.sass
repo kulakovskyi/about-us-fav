@@ -25,6 +25,8 @@
     .head-about
       height: 432px
       background: url("../img/top-bg-2.jpg") no-repeat 50% 0/cover
+      &__arrow
+        top: 315px
       &__title
         .normal-title
           letter-spacing: 1.7px
@@ -69,6 +71,7 @@
         margin-left: 80px
       &__map
         margin-left: -60px
+
         width: 815px
         height: 465px
         &-wrap
@@ -176,9 +179,9 @@
         .br
           .normal-title
             letter-spacing: 0
-            font-size: 47px
+            font-size: 55px
           .italic-title
-            font-size: 47px
+            font-size: 55px
       &__market
         margin: 73px 0 0 16px
         &-apple
@@ -457,7 +460,7 @@
         .br
           .normal-title,
           .italic-title
-            font-size: 41px
+            font-size: 55px
     .footer-about
       background: url("../img/footer-bg-2.jpg") no-repeat 50% 0/cover
       &__title
@@ -471,8 +474,8 @@
   .about-us
     .normal-title,
     .italic-title
-      font-size: 44px
-      height: 64px
+      font-size: 32px
+      height: 60px
     .quad-logo
       width: 128px
       height: 128px
@@ -482,6 +485,8 @@
     .head-about
       height: 576px
       background: url("../img/top-bg-mob.jpg") no-repeat 50% 50%/cover
+      &__arrow
+        display: none
       .container
         flex-direction: column
       &__left
@@ -554,6 +559,7 @@
       &__title
         display: flex
         position: relative
+        top: -4px
         .italic-title
           padding: 0 20px 0 0
           letter-spacing: 0
@@ -598,7 +604,8 @@
         margin-left: 0
         margin-top: -6px
       .map-ua
-        background: url("../img/philosophy-map-mob_ukr.png") no-repeat 0 0/contain
+        //background: url("../img/philosophy-map-mob_ukr.png") no-repeat 0 0/contain
+        height: 250px
       .map-ru
         background: url("../img/philosophy-map-mob_ru.png") no-repeat 0 0/contain
       .map-en
@@ -614,7 +621,8 @@
         .normal-title
           padding: 0 13px 0 11px
           letter-spacing: 0
-          font-size: 36px
+          font-size: 32px
+          height: 60px
           &:nth-child(2)
             margin-top: -15px
             padding-right: 13px
@@ -622,7 +630,8 @@
           margin-top: -15px
           padding: 0 15px
           letter-spacing: 0
-          font-size: 36px
+          font-size: 32px
+          height: 60px
       &__logo
         order: 2
     .game
@@ -703,11 +712,13 @@
     .play
       padding: 137px 0 107px
       text-align: left
+
       &__title
         text-align: left
         display: flex
         flex-direction: column
         align-items: flex-start
+        align-self: flex-start
         .italic-title
           margin-top: -8px
           letter-spacing: 0
@@ -742,13 +753,15 @@
           flex-direction: column
           align-items: flex-start
           .normal-title
-            font-size: 43px
+            font-size: 32px
+            height: 60px
             letter-spacing: 0
           .italic-title
             padding: 0 14px
             letter-spacing: 0
             margin-top: -15px
-            font-size: 44px
+            font-size: 32px
+            height: 60px
         >.italic-title
           margin-top: -8px
       &__right
@@ -793,8 +806,12 @@
           align-items: flex-start
           .italic-title
             padding: 0 15px 0 14px
-            font-size: 37px
+            font-size: 32px
             margin-top: -13px
+            height: 60px
+          .normal-title
+            font-size: 32px
+            height: 60px
         >.italic-title
           margin-top: -8px
           font-size: 41px
@@ -813,18 +830,21 @@
         width: 100%
         .normal-title
           padding: 0 10px 0 16px
-          font-size: 36px
+          font-size: 32px
+          height: 60px
           letter-spacing: 0
           &:nth-child(2)
             margin-top: -8px
         .italic-title
           margin-top: -8px
           padding: 0 19px 0 13px
+
         .br
           margin-top: -12px
           margin-bottom: -12px
           .italic-title
-            font-size: 36px
+            font-size: 32px
+            height: 60px
       &__link
         padding: 23px 73px 22px 24px
         &:after
@@ -870,14 +890,20 @@
       &__title
         .br
           .italic-title
-            font-size: 31px
+            font-size: 32px
 
 @media screen and (max-width: 374px)
   .about-us
     .normal-title
       letter-spacing: 0 !important
+      font-size: 28px !important
+      height: 58px !important
+    .italic-title
+      font-size: 28px !important
+      height: 58px !important
     .mission
       &__title
+        top: -4px
         .normal-title,
         .italic-title
           font-size: 38px
@@ -924,7 +950,7 @@
         &-item
           height: 130px
           img
-            max-height: 70px
+            max-height: 80px !important
     .play
       &__title
         .italic-title

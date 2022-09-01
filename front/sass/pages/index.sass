@@ -1,6 +1,7 @@
 $dark-blue: #010055
 $white: #fff
 $magenta: #ff267e
+$gray: #e8e8e8
 
 $font-suisse-intl-reg: SuisseIntl-Reg, sans-serif
 $font-suisse-intl-med: SuisseIntl-Med, sans-serif
@@ -15,20 +16,23 @@ $font-wulkan-display: WulkanDisplay, sans-serif
 .normal-title
   display: flex
   font-family: $font-suisse-intl-med
-  font-size: 66px
+  font-size: 60px
   text-transform: uppercase
-  color: $dark-blue
+  color: $gray
   padding: 0 24px
   letter-spacing: 2px
   background: $magenta
   height: 96px
   align-items: center
 
+.italic
+  font-family: $font-wulkan-display !important
+
 .italic-title
-  font-family: $font-wulkan-display
-  font-size: 66px
+  font-family: $font-suisse-intl-med
+  font-size: 60px
   text-transform: uppercase
-  color: $dark-blue
+  color: $gray
   letter-spacing: 1.5px
   background: $magenta
   padding: 0 24px
@@ -38,7 +42,7 @@ $font-wulkan-display: WulkanDisplay, sans-serif
 
 .txt-style
   font-family: $font-suisse-intl-reg
-  color: $magenta
+  color: $gray
   font-size: 21px
   line-height: 36px
   letter-spacing: 0.4px
@@ -67,6 +71,15 @@ $font-wulkan-display: WulkanDisplay, sans-serif
     background: url("../img/top-bg.jpg") no-repeat 50% 0/cover
     position: relative
     height: 480px
+    &__arrow
+      background: url(../img/arrow.png) no-repeat 0 0/contain
+      width: 48px
+      height: 84px
+      cursor: pointer
+      position: absolute
+      top: 348px
+      margin-left: 24px
+
     .container
       display: flex
       justify-content: space-between
@@ -210,7 +223,7 @@ $font-wulkan-display: WulkanDisplay, sans-serif
       width: 931px
       height: 532px
     .map-ua
-      background: url("../img/philosophy-map-desk_ukr.png") no-repeat 0 0/contain
+      background: url("../img/map-ua.png") no-repeat 0 0/contain
     .map-ru
       background: url("../img/philosophy-map-desk_ru.png") no-repeat 0 0/contain
     .map-en
@@ -461,10 +474,13 @@ $font-wulkan-display: WulkanDisplay, sans-serif
         &:nth-child(12)
           img
             max-height: 100px
+        &:nth-child(3)
+          img
+            max-height: 140px
         &:nth-child(1),
         &:nth-child(7)
           img
-            max-height: 140px
+            max-height: 150px
         img
           max-height: 120px
           filter: grayscale(1)
@@ -475,9 +491,11 @@ $font-wulkan-display: WulkanDisplay, sans-serif
       display: flex
       flex-direction: column
       align-items: flex-start
+
     &__title
       position: relative
       display: flex
+      align-self: center
       .italic-title
         padding: 0 20px 0 0
     &__wrap
@@ -493,6 +511,7 @@ $font-wulkan-display: WulkanDisplay, sans-serif
       margin-top: 30px
       &-paragraph
         margin-bottom: 85px
+        color: $magenta
         &:last-child
           margin-bottom: 0
     &__center
@@ -511,7 +530,7 @@ $font-wulkan-display: WulkanDisplay, sans-serif
       align-items: flex-start
       .normal-title,
       .italic-title
-        color: $magenta
+        color: $gray
         background: $dark-blue
       .normal-title
         &:nth-child(2)
@@ -593,7 +612,7 @@ $font-wulkan-display: WulkanDisplay, sans-serif
         &:before
           mask-repeat: no-repeat
           mask-size: contain
-          background-color: $dark-blue
+          background-color: $gray
       .social-fb
         &:before
           content: ''
